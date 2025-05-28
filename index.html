@@ -1,96 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Green Harvest Group</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5fff4;
-      color: #2d572c;
-      margin: 0;
-      padding: 20px;
-    }
-    header {
-      background-color: #4caf50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      max-width: 800px;
-      margin: 20px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    }
-    h2 {
-      color: #388e3c;
-    }
-    ul {
-      line-height: 1.6;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background-color: #388e3c;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Green Harvest Group MLM</title>
+    <style>
+        /* ... same styles as before ... */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0; padding: 0;
+            background: #f5f9f2; color: #2d3a1f;
+        }
+        header {
+            background: #4caf50; color: white;
+            padding: 20px 40px;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        header img.logo {
+            height: 50px;
+            width: 50px;
+        }
+        header h1 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 1.8rem;
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+        header .tagline {
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 1.1px;
+            white-space: nowrap;
+        }
+        main {
+            max-width: 1200px; margin: 40px auto; padding: 0 20px;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        section h2 {
+            color: #2f5d23;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 8px;
+            font-weight: 700;
+        }
+        .welcome-kit {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .welcome-kit img {
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+        }
+        .welcome-kit-details {
+            max-width: 600px;
+        }
+        .welcome-kit-details p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+        .price {
+            font-size: 1.5rem;
+            color: #388e3c;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid #a5d6a7;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #c8e6c9;
+            font-weight: 700;
+        }
+        .income-graph {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .income-graph svg {
+            max-width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+        }
+        .repurchase-store {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .repurchase-item {
+            width: 150px;
+            text-align: center;
+        }
+        .repurchase-item svg {
+            width: 100%;
+            height: 120px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgb(0 0 0 / 0.15);
+            background: #e8f5e9;
+        }
+        footer {
+            background: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .welcome-kit {
+                flex-direction: column;
+                align-items: center;
+            }
+            .welcome-kit-details {
+                max-width: 100%;
+            }
+            .repurchase-store {
+                justify-content: space-around;
+            }
+        }
+    </style>
 </head>
 <body>
-
 <header>
-  <h1>Green Harvest Group</h1>
-  <p><em>Join. Grow. Harvest.</em></p>
+    <!-- Simple green leaf logo -->
+    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+        <circle cx="32" cy="32" r="30" fill="#4caf50"/>
+        <path fill="#a5d6a7" d="M32 10c-4 10-10 18-18 24 10-6 18-14 24-24z"/>
+    </svg>
+    <h1>Green Harvest Group</h1>
+    <div class="tagline">GROW TOGETHER EARN TOGETHER</div>
 </header>
 
-<section>
-  <h2>Welcome Kit</h2>
-  <ul>
-    <li>₹1380 one-time joining fee</li>
-    <li>Includes 10 flower + 10 vegetable seed packets (GST-free, PP-packed)</li>
-    <li>Branded box packaging</li>
-  </ul>
+<main>
+    <section id="welcome-kit">
+        <h2>Welcome Kit</h2>
+        <div class="welcome-kit">
+            <!-- Simple seed box illustration -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" style="border-radius: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                <rect x="30" y="40" width="140" height="120" rx="20" ry="20" fill="#81c784" stroke="#4caf50" stroke-width="5"/>
+                <rect x="50" y="60" width="100" height="80" rx="10" ry="10" fill="#c8e6c9"/>
+                <text x="100" y="120" font-size="22" font-family="Verdana" fill="#2e7d32" text-anchor="middle" font-weight="bold">Seed Pack</text>
+            </svg>
 
-  <h2>MLM Plan (8-Level Payout)</h2>
-  <ul>
-    <li>Level 1: ₹500</li>
-    <li>Level 2: ₹100</li>
-    <li>Level 3: ₹100</li>
-    <li>Level 4: ₹100</li>
-    <li>Level 5: ₹50</li>
-    <li>Level 6: ₹50</li>
-    <li>Level 7: ₹50</li>
-    <li>Level 8: ₹1</li>
-    <li>Total Commission per Join: ₹951 (distributed immediately)</li>
-  </ul>
+            <div class="welcome-kit-details">
+                <p><strong>₹1380</strong> one-time joining fee</p>
+                <p>Includes 10 flower + 10 vegetable seed packets (GST-free, PP-packed)</p>
+                <p>Branded box packaging</p>
+                <p class="price">Price: ₹1380</p>
+            </div>
+        </div>
+    </section>
 
-  <h2>Important Rules</h2>
-  <ul>
-    <li>Commissionable value: ₹276 (20% of ₹1380)</li>
-    <li>Unlimited direct joins allowed</li>
-    <li>Daily income capping: ₹10,000</li>
-    <li>Re-topup required after ₹15,000 earnings</li>
-    <li>5% of income goes to repurchase wallet before ₹15,000 earnings; after that, 5% goes to TDS</li>
-  </ul>
+    <section id="mlm-plan">
+        <h2>MLM Plan (8-Level Payout)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Commission</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>₹500</td></tr>
+                <tr><td>2</td><td>₹100</td></tr>
+                <tr><td>3</td><td>₹100</td></tr>
+                <tr><td>4</td><td>₹100</td></tr>
+                <tr><td>5</td><td>₹50</td></tr>
+                <tr><td>6</td><td>₹50</td></tr>
+                <tr><td>7</td><td>₹50</td></tr>
+                <tr><td>8</td><td>₹1</td></tr>
+                <tr style="font-weight: 700;">
+                    <td>Total Commission</td>
+                    <td>₹951 (distributed immediately)</td>
+                </tr>
+            </tbody>
+        </table>
 
-  <h2>Repurchase Plan</h2>
-  <ul>
-    <li>No compulsory repurchase</li>
-    <li>Repurchase wallet usable on minimum ₹500 orders</li>
-    <li>24% commission on repurchase (equally across 8 levels)</li>
-    <li>On re-topup, user gets ₹1380 worth of discount coupons usable up to 25% per product</li>
-    <li>Re-topup ₹951 commission is distributed in reverse (bottom to top)</li>
-  </ul>
+        <div class="income-graph" aria-label="Commission Levels Graph" role="img">
+            <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation">
+                <!-- Background grid lines -->
+                <line x1="50" y1="250" x2="750" y2="250" stroke="#c8e6c9" stroke-width="2" />
+                <line x1="50" y1="200" x2="750" y2="200" stroke="#e0f2f1" stroke-width="1" />
+                <line x1="50" y1="150" x2="750" y2="150" stroke="#e0f2f1" stroke-width="1" />
+                <line x1="50" y1="100" x2="750" y2="100" stroke="#e0f2f1" stroke-width="1" />
+                <line x1="50" y1="50" x2="750" y2="50" stroke="#e0f2f1" stroke-width="1" />
 
-  <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">Join via WhatsApp</a>
-</section>
+                <!-- Bars -->
+                <!-- Level 1: ₹500 -->
+                <rect x="90" y="250" width="70" height="-200" fill="#4caf50" rx="8" ry="8" />
+                <text x="125" y="270" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="18">Lvl 1</text>
+                <text x="125" y="40" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="20">₹500</text>
 
+                <!-- Level 2: ₹100 -->
+                <rect x="190" y="250" width="70" height="-40" fill="#81c784" rx="8" ry="8" />
+                <text x="225" y="270" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="18">Lvl 2</text>
+                <text x="225" y="210" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="20">₹100</text>
+
+                <!-- Level 3: ₹100 -->
+                <rect x="290" y="250" width="70" height="-40" fill="#81c784" rx="8" ry="8" />
+                <text x="325" y="270" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="18">Lvl 3</text>
+                <text x="325" y="210" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="20">₹100</text>
+
+                <!-- Level 4: ₹100 -->
+                <rect x="390" y="250" width="70" height="-40" fill="#81c784" rx="8" ry="8" />
+                <text x="425" y="270" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="18">Lvl 4</text>
+                <text x="425" y="210" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="20">₹100</text>
+
+                <!-- Level 5: ₹50 -->
+                <rect x="490" y="250" width="70" height="-20" fill="#a5d6a7" rx="8" ry="8" />
+                <text x="525" y="270" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="18">Lvl 5</text>
+                <text x="525" y="230" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="20">₹50</text>
+
+                <!-- Level 6: ₹50 -->
+                <rect x="590" y="250" width="70" height="-20" fill="#a5d6a7" rx="8" ry="8" />
+                <text x="625" y="270" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="18">Lvl 6</text>
+                <text x="625" y="230" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="20">₹50</text>
+
+                <!-- Level 7: ₹50 -->
+                <rect x="690" y="250" width="70" height="-20" fill="#a5d6a7" rx="8" ry="8" />
+                <text x="725" y="270" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="18">Lvl 7</text>
+                <text x="725" y="230" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="20">₹50</text>
+
+                <!-- Level 8: ₹1 -->
+                <rect x="790" y="250" width="0" height="0" fill="#c8e6c9" rx="8" ry="8" />
+                <text x="825" y="270" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="18">Lvl 8</text>
+                <text x="825" y="245" text-anchor="middle" fill="#2e7d32" font-weight="700" font-size="20">₹1</text>
+            </svg>
+        </div>
+        <div style="margin-top: 20px; font-size: 1rem; max-width: 650px;">
+            <p><strong>Important Rules:</strong></p>
+            <ul>
+                <li>Commissionable value: ₹276 (20% of ₹1380)</li>
+                <li>Unlimited direct joins allowed</li>
+                <li>Daily income capping: ₹10,000</li>
+                <li>Re-topup required after ₹15,000 earnings</li>
+                <li>5% of income goes to repurchase wallet before ₹15,000 earnings; after that, 5% goes to TDS</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="repurchase-plan">
+        <h2>Repurchase Plan</h2>
+        <div style="max-width: 650px; margin-bottom: 20px;">
+            <ul>
+                <li>No compulsory repurchase</li>
+                <li>Repurchase wallet usable on minimum ₹500 orders</li>
+                <li>24% commission on repurchase (equally across 8 levels)</li>
+                <li>On re-topup, user gets ₹1380 worth of discount coupons usable up to 25% per product</li>
+                <li>Re-topup ₹951 commission is distributed in reverse (bottom to top)</li>
+            </ul>
+        </div>
+        <div class="repurchase-store" aria-label="Repurchase seed store">
+            <!-- Flower seed 1 -->
+            <div class="repurchase-item">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flower Seed">
+                    <circle cx="32" cy="32" r="30" fill="#f06292" />
+                    <circle cx="32" cy="32" r="10" fill="#fff" />
+                    <circle cx="32" cy="22" r="6" fill="#f48fb1" />
+                    <circle cx="22" cy="32" r="6" fill="#f48fb1" />
+                    <circle cx="42" cy="32" r="6" fill="#f48fb1" />
+                    <circle cx="32" cy="42" r="6" fill="#f48fb1" />
+                </svg>
+                <p>Flower Seed</p>
+            </div>
+            <!-- Flower seed 2 -->
+            <div class="repurchase-item">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flower Seed">
+                    <circle cx="32" cy="32" r="30" fill="#ba68c8" />
+                    <circle cx="32" cy="32" r="12" fill="#ede7f6" />
+                    <circle cx="24" cy="24" r="6" fill="#ce93d8" />
+                    <circle cx="40" cy="24" r="6" fill="#ce93d8" />
+                    <circle cx="24" cy="40" r="6" fill="#ce93d8" />
+                    <circle cx="40" cy="40" r="6" fill="#ce93d8" />
+                </svg>
+                <p>Flower Seed</p>
+            </div>
+
+            <!-- Vegetable seed 1 -->
+            <div class="repurchase-item">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vegetable Seed">
+                    <rect x="10" y="20" width="44" height="24" rx="10" ry="10" fill="#4db6ac" />
+                    <circle cx="32" cy="32" r="15" fill="#b2dfdb" />
+                    <circle cx="24" cy="32" r="6" fill="#80cbc4" />
+                    <circle cx="40" cy="32" r="6" fill="#80cbc4" />
+                </svg>
+                <p>Vegetable Seed</p>
+            </div>
+
+            <!-- Vegetable seed 2 -->
+            <div class="repurchase-item">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vegetable Seed">
+                    <rect x="8" y="18" width="48" height="28" rx="14" ry="14" fill="#388e3c" />
+                    <circle cx="32" cy="32" r="14" fill="#a5d6a7" />
+                    <circle cx="24" cy="32" r="7" fill="#81c784" />
+                    <circle cx="40" cy="32" r="7" fill="#81c784" />
+                </svg>
+                <p>Vegetable Seed</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2025 Green Harvest Group | All rights reserved
+</footer>
 </body>
 </html>
