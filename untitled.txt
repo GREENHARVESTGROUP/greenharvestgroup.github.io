@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Green Harvest Group - MLM Plan</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e9f5e9;
+    color: #2d5a2d;
+    margin: 0; padding: 0;
+  }
+  header {
+    background: #4caf50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  header h1 {
+    margin: 0;
+  }
+  header p {
+    font-style: italic;
+    margin: 5px 0 0;
+  }
+  main {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #a6d1a6;
+  }
+  h2 {
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 5px;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  ul li::before {
+    content: "✔️ ";
+    color: #4caf50;
+  }
+  section {
+    margin-bottom: 25px;
+  }
+  .highlight {
+    background: #d4edda;
+    padding: 10px;
+    border-left: 5px solid #4caf50;
+    margin: 15px 0;
+  }
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #4caf50;
+    color: white;
+    margin-top: 40px;
+  }
+  @media(max-width: 600px) {
+    main {
+      margin: 15px;
+      padding: 15px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Green Harvest Group</h1>
+  <p>Grow Together, Earn Together</p>
+</header>
+
+<main>
+  <section>
+    <h2>Joining Amount</h2>
+    <p><strong>₹1380 (One-Time)</strong></p>
+  </section>
+
+  <section>
+    <h2>Welcome Kit Includes</h2>
+    <ul>
+      <li>10 Flower Seed Packets</li>
+      <li>10 Vegetable Seed Packets</li>
+      <li>Branded Green Harvest Group Box</li>
+      <li>GST-free loose seeds in PP packs</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Income Plan</h2>
+    <p><strong>Direct Joining:</strong> Unlimited</p>
+    <p><strong>8-Level Generation Income:</strong></p>
+    <ul>
+      <li>Level 1: ₹500</li>
+      <li>Level 2: ₹100</li>
+      <li>Level 3: ₹100</li>
+      <li>Level 4: ₹100</li>
+      <li>Level 5: ₹50</li>
+      <li>Level 6: ₹50</li>
+      <li>Level 7: ₹50</li>
+      <li>Level 8: ₹1</li>
+    </ul>
+    <p><em>Total ₹951 per new joining</em></p>
+  </section>
+
+  <section>
+    <h2>Re-Topup Rules</h2>
+    <div class="highlight">
+      <p>After earning ₹15,000, member must <strong>Re-topup ₹1380</strong></p>
+      <p>On re-topup:</p>
+      <ul>
+        <li>₹951 distributed in reverse order (bottom to top)</li>
+        <li>Cycle continues again</li>
+        <li>Member receives ₹1380 worth discount coupons (up to 25% of MRP)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Repurchase System (Optional)</h2>
+    <ul>
+      <li>Minimum order ₹500</li>
+      <li>5% of earnings go to Repurchase Wallet until ₹15,000 earned</li>
+      <li>After ₹15,000, 5% goes to TDS</li>
+      <li>Repurchase Commission: 24% equally across 8 levels (3% per level)</li>
+      <li>Repurchase not compulsory</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Income Capping</h2>
+    <p><strong>Daily Income Limit:</strong> ₹10,000</p>
+  </section>
+</main>
+
+<footer>
+  © 2025 Green Harvest Group
+</footer>
+
+</body>
+</html>
